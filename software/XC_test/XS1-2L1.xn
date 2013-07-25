@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://www.xmos.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.xmos.com http://www.xmos.com">
+  <Type>Board</Type>
+
+  <Declarations>
+    <Declaration>core stdcore[2]</Declaration>
+  </Declarations>
+
+  <Nodes>
+    <Node Id="0" Type="XS1-L1A-TQ128">
+      <Core Number="0" Reference="stdcore[0]"/>
+    </Node>
+    <Node Id="1" Type="XS1-L1A-TQ128">
+      <Core Number="0" Reference="stdcore[1]"/>
+    </Node>
+  </Nodes>
+  
+  <Links>
+    <Link Encoding="2wire" Delays="2047,2047">
+      <LinkEndpoint NodeId="0" Link="1"/>
+      <LinkEndpoint NodeId="1" Link="0"/>
+    </Link>
+  </Links>
+  
+    <JTAGChain>
+       <JTAGDevice NodeId="0"/>
+       <JTAGDevice NodeId="1"/>   
+    </JTAGChain>
+
+</Network>
+

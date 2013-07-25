@@ -1,0 +1,159 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 16:17:02  September 24, 2010
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		2w_test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY toplevel
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:17:02  SEPTEMBER 24, 2010"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name VHDL_FILE xlink_2w_rx_phy.vhd
+set_global_assignment -name VHDL_FILE xlink_2w_tx_phy.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_R14 -to a1
+set_location_assignment PIN_T12 -to a2
+set_location_assignment PIN_R12 -to a3
+set_location_assignment PIN_T10 -to a4
+set_location_assignment PIN_T15 -to b1
+set_location_assignment PIN_W17 -to b2
+set_location_assignment PIN_AB17 -to b3
+set_location_assignment PIN_AA18 -to b4
+set_location_assignment PIN_G21 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to a1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to a2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to a3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to a4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to b4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+set_global_assignment -name VECTOR_WAVEFORM_FILE tw_test.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE tw_test.vwf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS4
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name MISC_FILE "C:/Documents and Settings/Sphere/Desktop/xmos_link/dev/2w_test/2w_test.dpf"
+set_global_assignment -name USE_TIMEQUEST_TIMING_ANALYZER OFF
+set_global_assignment -name FMAX_REQUIREMENT "75 MHz"
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING OFF
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT FAST
+set_global_assignment -name VHDL_FILE clock_divider.vhd
+set_global_assignment -name MISC_FILE "C:/Documents and Settings/Sphere.WORKSTATION/Desktop/xmos_link/dev/2w_test/2w_test.dpf"
+set_location_assignment PIN_AA9 -to rst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_en_o
+set_location_assignment PIN_V11 -to clk_en_o
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to data_rd_o
+set_location_assignment PIN_Y10 -to data_rd_o
+set_global_assignment -name VHDL_FILE uart_tx.vhd
+set_global_assignment -name VHDL_FILE uart_rx.vhd
+set_location_assignment PIN_V8 -to rx_state0[3]
+set_location_assignment PIN_T8 -to rx_state0[2]
+set_location_assignment PIN_W6 -to rx_state0[1]
+set_location_assignment PIN_W7 -to rx_state0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rx_state0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rx_state0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rx_state0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rx_state0[0]
+set_location_assignment PIN_AA15 -to uart_rx_inv0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_rx_inv0
+set_location_assignment PIN_AB10 -to uart_tx0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_tx0
+set_location_assignment PIN_AB13 -to uart_rx_inv1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_rx_inv1
+set_location_assignment PIN_AB5 -to uart_tx1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_tx1
+set_global_assignment -name VHDL_FILE toplevel.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to a1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to a2
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to a3
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to a4
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to b1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to b2
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to b3
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to b4
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to clk
+set_instance_assignment -name SLEW_RATE 2 -to a1
+set_instance_assignment -name SLEW_RATE 2 -to a2
+set_instance_assignment -name SLEW_RATE 2 -to b3
+set_instance_assignment -name SLEW_RATE 2 -to b4
+set_instance_assignment -name PCI_IO ON -to a3
+set_instance_assignment -name PCI_IO ON -to a4
+set_instance_assignment -name PCI_IO ON -to b1
+set_instance_assignment -name PCI_IO ON -to b2
+set_instance_assignment -name SLEW_RATE 2 -to clk_en_o
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to clk_en_o
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rst
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to data_rd_o
+set_instance_assignment -name SLEW_RATE 2 -to data_rd_o
+set_instance_assignment -name SLEW_RATE 2 -to rx_state0[3]
+set_instance_assignment -name SLEW_RATE 2 -to rx_state0[2]
+set_instance_assignment -name SLEW_RATE 2 -to rx_state0[1]
+set_instance_assignment -name SLEW_RATE 2 -to rx_state0[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rx_state0[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rx_state0[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rx_state0[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rx_state0[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to uart_rx_inv0
+set_instance_assignment -name SLEW_RATE 2 -to uart_tx0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to uart_tx0
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to uart_rx_inv1
+set_instance_assignment -name SLEW_RATE 2 -to uart_tx1
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to uart_tx1
+set_global_assignment -name VHDL_FILE reset_control.vhd
+set_location_assignment PIN_W10 -to uart_rx_o
+set_location_assignment PIN_R10 -to rst_n_o
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rst_n_o
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to uart_rx_o
+set_instance_assignment -name SLEW_RATE 2 -to rst_n_o
+set_instance_assignment -name SLEW_RATE 2 -to uart_rx_o
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to rst_n_o
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to uart_rx_o
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
