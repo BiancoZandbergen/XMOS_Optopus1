@@ -36,3 +36,7 @@ such as affordable GBIC Media Converters commonly used in
 professional network and router appliances.
 
 The project name is suffixed with '1' to leave room for future projects.
+
+<p align="center">
+  <img src="http://biancozandbergen.github.io/images/xmos_optopus1_1.jpg"/>
+</p>
